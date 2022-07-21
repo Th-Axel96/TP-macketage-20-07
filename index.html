@@ -10,10 +10,14 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header class="h-40 bg-header bg-nav border-solid">
-      <section class="grid h-20 grid-cols-3">
+    <header class="bg-img bg-nav border-solid">
+      <section class="grid grid-cols-3">
         <div class="flex justify-center items-center">
           <img
             width="130px"
@@ -21,22 +25,37 @@
             src="./assets/img/LogoS.png"
             alt="logo"
           />
+          <span class="text-purple px-4"
+            ><i class="fa fa-cog fa-spin fa-4x" aria-hidden="true"></i
+          ></span>
         </div>
 
         <div class="flex items-center justify-center">
           <nav class="text-4xl">
-            <ul class="flex">
-              <li class="list-none">
-                <a class="text-underline text-white" href="#">Accueil</a>
+            <ul class="flex list-none">
+              <li>
+                <span>
+                  <i
+                    class="text-purple pr-4 fa fa-hand-o-right"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+                <a class="text-white no-underline" href="#">Accueil</a>
               </li>
-              <li class="pl-16 list-none">
-                <a class="text-underline text-white" href="#">Actualités</a>
+              <li class="pl-16">
+                <a class="text-white no-underline" href="#">Actualités</a>
               </li>
-              <li class="pl-16 list-none">
-                <a class="text-underline text-white" href="#">Boutique</a>
+              <li class="pl-16">
+                <a class="text-white no-underline" href="#">Boutique</a>
               </li>
-              <li class="pl-16 list-none">
-                <a class="text-underline text-white" href="#">Forum</a>
+              <li class="pl-16">
+                <a class="text-white no-underline" href="#">Forum</a>
+                <span
+                  ><i
+                    class="text-purple pl-4 fa fa-hand-o-left"
+                    aria-hidden="true"
+                  ></i
+                ></span>
               </li>
             </ul>
           </nav>
@@ -44,14 +63,10 @@
 
         <div class="text-3xl pr-4 text-white">
           <label class="flex justify-end pt-2" for="Identifiant"
-            >Identifiant :&emsp;<input
-              class="text-white bg-purple text-1xl"
-              type="text"
+            >Identifiant :&emsp;<input class="text-1xl" type="text"
           /></label>
           <label class="flex justify-end pb-2" for="Password"
-            >Mot de passe :&emsp;<input
-              class="text-white bg-purple text-1xl"
-              type="text"
+            >Mot de passe :&emsp;<input class="text-1xl" type="text"
           /></label>
           <div class="flex justify-center">
             <button class="text-2xl">Mot de passe oubliée ?</button>
@@ -62,7 +77,6 @@
       </section>
     </header>
     <svg
-      class="pt-2"
       id="wave"
       style="transform: rotate(180deg); transition: 0.3s"
       viewBox="0 0 1440 100"
@@ -82,14 +96,14 @@
       ></path>
     </svg>
 
-    <main class="grid grid-cols-4 grid-rows-2 pb-4 h-80">
+    <main class="grid grid-cols-4 grid-rows-2 pb-4 h-160">
       <h1
-        class="text-4xl col-start-1 col-end-3 flex justify-center px-4 m-0 pb-4 border-r text-underline"
+        class="text-4xl col-span-2 flex justify-center items-center px-4 m-0 pb-4 border-r"
       >
         Titre section 1
       </h1>
       <p
-        class="h-160 text-2xl pl-4 order-4 flex justify-center items-center m-0"
+        class="text-2xl h-40 pl-4 order-4 flex justify-center items-center m-0"
       >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et nam est
         omnis inventore quae quisquam natus quis! Harum ea deserunt nihil iste,
@@ -108,12 +122,12 @@
       </div>
 
       <h1
-        class="text-4xl col-start-3 col-end-5 flex justify-center px-4 m-0 border-l text-underline pb-4"
+        class="text-4xl col-span-2 flex justify-center items-center px-4 m-0 border-l pb-4"
       >
         Titre section 2
       </h1>
       <p
-        class="order-6 h-160 text-2xl pl-4 flex justify-center items-center border-l m-0"
+        class="order-6 text-2xl pl-4 flex justify-center items-center border-l m-0"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
         earum laudantium, ullam asperiores unde reprehenderit. Voluptates,
@@ -131,5 +145,16 @@
         />
       </div>
     </main>
+
+    <footer class="w-screen">
+      <div class="bg-img text-white grid grid-cols-4 border-solid">
+        <h1 class="flex justify-center items-center">Contact</h1>
+        <span
+          ><i class="fa fa-camera-retro fa-lg"></i>
+          <i class="fa fa-cog fa-spin fa-4x" aria-hidden="true"></i>
+        </span>
+      </div>
+      
+    </footer>
   </body>
 </html>
