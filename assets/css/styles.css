@@ -2,10 +2,8 @@
   font-family: Raleway;
 }
 
-
-
-.bg-purple {
-  background-color: #d000fe 0.5;
+.bg-amber-100 {
+  background-color: rgb(254 243 199);
 }
 
 .bg-black {
@@ -18,6 +16,10 @@
 
 .text-white {
   color: white;
+}
+
+.text-amber-100 {
+  color: rgb(254 243 199);
 }
 
 .text-purple {
@@ -80,8 +82,6 @@
   text-decoration: none;
 }
 
-
-
 .border-solid {
   border: #d000fe 5px solid;
 }
@@ -110,8 +110,8 @@
   justify-content: end;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-arround {
+  justify-content: space-around;
 }
 
 .items-center {
@@ -139,7 +139,7 @@
 }
 
 .grid-rows-2 {
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
 }
 
 .col-span-2 {
@@ -227,6 +227,7 @@
   width: 100vw;
 }
 
-#hoverimgsection1:hover {
-  background-image: url(../img/galaxie\ bleu.jpg);
+.cursor-pointer {
+  cursor: pointer;
 }
+
